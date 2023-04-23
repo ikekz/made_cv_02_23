@@ -29,7 +29,7 @@ class ImageDataset(Dataset):
             # albumentations.RandomBrightnessContrast(p=0.4),
             # albumentations.RandomGamma(p=0.4),
             albumentations.Blur(blur_limit=1, p=0.1),
-            # albumentations.GaussNoise((10, 100), p=0.2),
+            # albumentations.GaussNoise((10, 20), p=0.2),
             albumentations.VerticalFlip(p=0.5),
             # albumentations.CoarseDropout(max_holes=8, max_height=8, max_width=8, p=0.5)
         ])
